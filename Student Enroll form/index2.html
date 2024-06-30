@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student's Enrollment Form</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<h2 >Student Enrollment Form 🧑‍🎓 </h2>
+<div class="container">
+ 
+  <form id="enrollmentForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image">
+    </div>
+    <div class="form-group" id="form">
+      <label>Gender:</label>
+      <div class="checkbox-group" >
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+    </div>
+    <div class="form-group" id="form">
+      <label>Skills:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+        <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+        <label><input type="checkbox" name="skills" value="reactjs"> ReactJS</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </div>
+  </form>
+  
+  <div class="enrollment-details">
+    <h3>Enrollment Details:</h3>
+    <div id="outputDetails"></div>
+  </div>
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
